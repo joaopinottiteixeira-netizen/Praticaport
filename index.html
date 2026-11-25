@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>portofolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        button {
+
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 40px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            flex: 1;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2></h2>
+    <video src="Pinteresvideo.mp4" autoplay loop muted playsinline></video>
+    <div class="botoes">
+        <button>Hellow</button>
+        <button>Calculadora</button>
+        <button>impar ou par</button>
+        <button>Gerar Numero</button>
+        <button>Gerar nome</button>
+        <button>Botão Kawai</button>
+        <button>calcular Nota</button>
+        <button>Sorte ou azar</button>
+    </div>
+
+
+</body>
+
+</html>
