@@ -1,0 +1,28 @@
+.botoes {
+    display: flex;
+    flex-wrap: wrap;            /* NOVO: quebra de linha se faltar espaço */
+    justify-content: center;    /* TROCADO: era space-between */
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+button {
+    background-color: #00000000;
+    color: rgb(248, 202, 0);
+    border: none;
+    border-radius: 5px;
+    width: 92px;                /* TROCADO: era 130px */
+    height: 92px;               /* TROCADO: era 110px, agora é quadrado */
+    font-size: 12px;            /* TROCADO: era 16px */
+    cursor: pointer;
+}
+
+/* NOVO: em tela grande (PC) os botões ficam um pouco maiores */
+@media (min-width: 760px) {
+    button {
+        width: 108px;
+        height: 108px;
+        font-size: 14px;
+    }
+}
